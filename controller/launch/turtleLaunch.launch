@@ -1,0 +1,13 @@
+<launch>
+    <rosparam
+    command = "load"
+    file = "$(find controller)/config/param.yaml"     
+    />
+    <node 
+    pkg="controller"
+    type ="turtleController.py"
+    name = "turtle"
+    output = "screen"
+    >
+    </node>
+</launch>
